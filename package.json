@@ -1,0 +1,58 @@
+{
+  "name": "@bract-tech/google-maps-dll",
+  "version": "1.0.0",
+  "description": "Load the Google Maps JavaScript API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepare": "npm run build"
+  },
+  "homepage": "https://github.com/bract-tech/google-maps-dll",
+  "bugs": {
+    "url": "https://github.com/bract-tech/google-maps-dll/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bract-tech/google-maps-dll.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": {
+    "name": "Bract Technologies",
+    "email": "opensource@bract.tech",
+    "url": "https://bract.tech"
+  },
+  "contributors": [
+    {
+      "name": "Clitson Belleau",
+      "email": "clbe-c384@bract.tech"
+    }
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "google",
+    "maps",
+    "api",
+    "bootstrap",
+    "javascript"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "tag": "latest",
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
