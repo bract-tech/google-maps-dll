@@ -2,7 +2,7 @@
  * This file contains code derived from @googlemaps/js-api-loader,
  * which is licensed under the Apache License, Version 2.0. See the
  * section block below for specific copyright and license details.
- * 
+ *
  * Copyright 2026 Bract Technologies
  * Copyright 2025 Google LLC
  *
