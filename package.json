@@ -1,6 +1,6 @@
 {
   "name": "@bract-tech/google-maps-dll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load the Google Maps JavaScript API",
   "type": "module",
   "main": "./dist/index.js",
@@ -17,7 +17,7 @@
     "build": "rm -rf dist && tsc",
     "prepare": "npm run build"
   },
-  "homepage": "https://github.com/bract-tech/google-maps-dll",
+  "homepage": "https://git.bract.tech/google-maps-dll",
   "bugs": {
     "url": "https://github.com/bract-tech/google-maps-dll/issues"
   },
@@ -44,7 +44,10 @@
     "google",
     "maps",
     "api",
-    "bootstrap",
+    "astro",
+    "angular",
+    "apphosting",
+    "firebase",
     "javascript"
   ],
   "devDependencies": {
