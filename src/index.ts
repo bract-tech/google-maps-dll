@@ -39,6 +39,19 @@ declare global {
 }
 
 /**
+ * Google Maps Dynamic Library Loader
+ * ==================================
+ *
+ * A lightweight wrapper for the new Maps JavaScript API bootstrap loader
+ * based on Google's Dynamic Library Import script.
+ * https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+ *
+ * More Control Loading the Maps JavaScript API with flexible library loading
+ * and performance improvements.
+ * https://mapsplatform.google.com/resources/blog/more-control-loading-maps-javascript-api/
+ *
+ * /////////////////////////////////////////////////////////////////////////////
+ *
  * Initializes the Google Maps JavaScript API bootstrap loader.
  * This function is safe to call multiple times; it will only initialize once.
  *
@@ -48,14 +61,6 @@ declare global {
  * Do not deobfuscate or refactor the IIFE below. Keeping the snippet as a
  * 1:1 copy makes it trivial to copy-paste future upstream updates from the
  * official Google Maps Platform documentation.
- *
- * Google Maps Dynamic Library Loader
- * Native implementation based on Google's recommended dynamic loading pattern.
- * https://developers.google.com/maps/documentation/javascript/load-maps-js-api
- *
- * More Control Loading the Maps JavaScript API with flexible library loading
- * and performance improvements.
- * https://mapsplatform.google.com/resources/blog/more-control-loading-maps-javascript-api/
  */
 export const loadGoogleMaps = (options: LoaderOptions) => {
     if (typeof window === 'undefined') return;
